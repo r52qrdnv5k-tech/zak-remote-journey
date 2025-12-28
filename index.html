@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zakariyya | Remote Journey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="container">
+        <h1 class="logo">Zakariyya</h1>
+        <nav class="nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2>Building a remote career for my family.</h2>
+          <p>
+            I’m learning web development step-by-step and building real
+            projects. This is my journey.
+          </p>
+          <div class="buttons">
+            <a class="btn primary" href="#skills">View Skills</a>
+            <a class="btn" href="#contact">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h3>About</h3>
+          <p>
+            I’m focused on building consistent skills that lead to reliable
+            remote income.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h3>Skills I’m building</h3>
+          <ul class="skills">
+            <li>HTML (structure)</li>
+            <li>CSS (layout & responsive design)</li>
+            <li>JavaScript (interactivity)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h3>Contact</h3>
+          <p>Email: example@email.com</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Zakariyya — Remote Journey</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

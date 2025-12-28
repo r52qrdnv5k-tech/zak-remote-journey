@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  width: min(1000px, 92%);
+  margin: 0 auto;
+}
+
+.top {
+  border-bottom: 1px solid #eee;
+}
+
+.top .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.logo {
+  margin: 0;
+  font-size: 18px;
+}
+
+.nav a {
+  color: #111;
+  text-decoration: none;
+  margin-left: 14px;
+}
+
+.hero {
+  padding: 96px 0;
+}
+
+.hero h2 {
+  font-size: clamp(28px, 5vw, 44px);
+  margin: 0 0 10px;
+}
+
+.hero p {
+  max-width: 60ch;
+  margin: 0 0 18px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 1px solid #111;
+  text-decoration: none;
+  color: #111;
+  border-radius: 10px;
+}
+
+.btn.primary {
+  background: #111;
+  color: white;
+}
+
+.section {
+  padding: 42px 0;
+  border-top: 1px solid #f2f2f2;
+}
+
+.skills {
+  padding-left: 18px;
+}
+
+.footer {
+  padding: 18px 0;
+  border-top: 1px solid #eee;
+}
+/* Day 2: Mobile improvements */
+@media (max-width: 600px) {
+  .top .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav a {
+    margin-left: 0;
+    margin-right: 14px;
+  }
+
+  .hero {
+    padding: 48px 0;
+  }
+}
+.contact-form {
+  max-width: 520px;
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 6px;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font: inherit;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
