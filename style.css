@@ -39,7 +39,7 @@ body {
   padding: 96px 0;
 }
 
-.hero h2 {
+.hero h1 {
   font-size: clamp(28px, 5vw, 44px);
   margin: 0 0 10px;
 }
@@ -47,6 +47,8 @@ body {
 .hero p {
   max-width: 60ch;
   margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
 .buttons {
