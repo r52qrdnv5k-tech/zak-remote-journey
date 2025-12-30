@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
@@ -37,6 +40,9 @@ body {
 
 .hero {
   padding: 96px 0;
+  background: #f9fafb;
+  border-bottom: 1px solid #e5e7eb;
+}
 }
 
 .hero h1 {
